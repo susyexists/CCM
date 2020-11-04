@@ -1,0 +1,41 @@
+&CONTROL
+	calculation = "bands"
+	pseudo_dir  = "~/pseudos"
+	outdir="./outdir"
+	prefix="Li"
+/
+
+&SYSTEM
+    a           =  3.42682e+00
+    degauss     =  1.00000e-02
+    ecutrho     =  9.22608e+02
+    ecutwfc     =  1.02512e+02
+    ibrav       = 3
+    nat         = 1
+    ntyp        = 1
+    nbnd        = 4
+    occupations = "smearing"
+    smearing    = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    mixing_beta      =  7.00000e-01
+/
+
+K_POINTS {tpiba_b}
+6
+gG     20
+N      20
+P      20
+gG     20
+H      20
+N      20
+
+ATOMIC_SPECIES
+Li      6.94100  li_pbe_v1.4.uspp.F.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Li      0.000000   0.000000   0.000000
+
+

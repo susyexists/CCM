@@ -1,0 +1,7 @@
+&bands
+outdir = './outdir'
+prefix = 'Li'
+filband = 'Li.bands.dat'
+!plot_2d=.true
+/
+
