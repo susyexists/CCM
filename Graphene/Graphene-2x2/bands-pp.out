@@ -1,0 +1,52 @@
+
+     Program BANDS v.6.6 starts on  7Nov2020 at 22:10:58 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     Fft bands division:     nmany     =       1
+
+     Reading xml data from directory:
+
+     ./outdir/graphene.save/
+     Message from routine readpp:
+     file ./outdir/graphene.save/C.pbe-n-kjpaw_psl.1.0.0.UPF not found
+     file C.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        2173     955    283                71857    21231    3263
+ 
+
+     Check: negative core charge=   -0.000010
+     Reading collected, re-writing distributed wavefunctions
+     high-symmetry point:  0.3333 0.5774 0.0000   x coordinate   0.0000
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.6667
+     high-symmetry point:  0.0000 0.5774 0.0000   x coordinate   1.2440
+     high-symmetry point:  0.3333 0.5774 0.0000   x coordinate   1.5774
+
+     Plottable bands (eV) written to file graphene.bands.dat.gnu
+     Bands written to file graphene.bands.dat
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine divide_class (1):
+     Wrong classes for D_3h
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...

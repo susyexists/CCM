@@ -1,0 +1,46 @@
+&CONTROL
+    calculation = "scf"
+    outdir="./outdir"
+    prefix="graphene"
+    pseudo_dir  = "~/pseudos"
+/
+
+&SYSTEM
+    ibrav = 0
+    degauss     =  1.00000e-02
+    ecutrho     =  3.61681e+02
+    ecutwfc     =  4.01868e+01
+    nat         = 8
+    ntyp        = 1
+    occupations = "smearing"
+    smearing    = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-08
+    mixing_beta      =  5.00000e-01
+/
+
+CELL_PARAMETERS {angstrom}
+  4.935440   0.000000   0.000000
+ -2.467720   4.274216   0.000000
+  0.000000   0.000000   4.342520
+
+
+
+K_POINTS {automatic}
+ 6  6  1  0 0 0
+
+ATOMIC_SPECIES
+C      12.01070  C.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {crystal}
+C       0.000000   0.000000   0.500000
+C       0.333334   0.166667   0.500000
+C       0.500000   0.500000   0.500000
+C       0.333334   0.666667   0.500000
+C       0.500000   0.000000   0.500000
+C       0.833334   0.166667   0.500000
+C      -0.000000   0.500000   0.500000
+C       0.833334   0.666667   0.500000
+
