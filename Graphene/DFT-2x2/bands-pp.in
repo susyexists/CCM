@@ -1,0 +1,7 @@
+&bands
+outdir = './outdir'
+prefix = 'graphene'
+filband = 'graphene.bands.dat'
+!plot_2d=.true
+/
+
