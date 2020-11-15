@@ -1,0 +1,39 @@
+&CONTROL
+    calculation = "nscf"
+    restart_mode='from_scratch'
+    prefix='nbse2'
+    outdir='./outdir'
+    pseudo_dir='/home/sinan/q-e/SSSP_precision_pseudos'
+/
+
+&SYSTEM
+    a                         =  3.48940e+00
+    c                         =  2.33679e+01
+    degauss                   =  0.05
+    ecutrho                   =  230
+    ecutwfc                   =  30
+    ibrav                     = 4
+    nat                       = 3
+    ntyp                      = 2
+    occupations               = "tetrahedra"
+    smearing                  = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-08
+    mixing_beta      =  4.00000e-01
+/
+
+K_POINTS {automatic}
+ 24  24  1  0 0 0
+
+
+ATOMIC_SPECIES
+Nb     92.90638  Nb.pbe-spn-kjpaw_psl.0.3.0.UPF
+Se     78.96000  Se_pbe_v1.uspp.F.UPF
+
+
+ATOMIC_POSITIONS {angstrom}
+Se     -0.000000   2.014608  13.367933
+Nb      0.000000   0.000000  11.683967  0 0 0
+Se     -0.000000   2.014608  10.000000  0 0 0

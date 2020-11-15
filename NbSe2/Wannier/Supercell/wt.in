@@ -1,0 +1,97 @@
+&TB_FILE
+Hrfile = 'nbse2_hr.dat'
+/
+
+
+!> bulk band structure calculation flag
+&CONTROL
+BulkBand_calc         = T
+!BulkBand_plane_calc = T
+/
+
+&SYSTEM
+NumOccupied =  1        ! NumOccupied
+SOC = 0                 ! without
+E_FERMI = -1.6153        ! e-fermi
+/
+
+&PARAMETERS
+Nk1 =1001           ! number k points
+/
+
+LATTICE
+Angstrom
+10.468200   0.000000   0.000000
+-5.234100   9.065727   0.000000
+ 0.000000   0.000000  23.367900
+
+ATOM_POSITIONS
+         27
+Cartesian
+Se     -0.000000   2.014608  13.367933
+Nb      0.000000   0.000000  11.683967
+Se     -0.000000   2.014608  10.000000
+Se     -1.744700   5.036517  13.367933
+Nb     -1.744700   3.021909  11.683967
+Se     -1.744700   5.036517  10.000000
+Se     -3.489400   8.058426  13.367933
+Nb     -3.489400   6.043818  11.683967
+Se     -3.489400   8.058426  10.000000
+Se      3.489400   2.014608  13.367933
+Nb      3.489400   0.000000  11.683967
+Se      3.489400   2.014608  10.000000
+Se      1.744700   5.036517  13.367933
+Nb      1.744700   3.021909  11.683967
+Se      1.744700   5.036517  10.000000
+Se     -0.000000   8.058426  13.367933
+Nb      0.000000   6.043818  11.683967
+Se     -0.000000   8.058426  10.000000
+Se      6.978800   2.014608  13.367933
+Nb      6.978800   0.000000  11.683967
+Se      6.978800   2.014608  10.000000
+Se      5.234100   5.036517  13.367933
+Nb      5.234100   3.021909  11.683967
+Se      5.234100   5.036517  10.000000
+Se      3.489400   8.058426  13.367933
+Nb      3.489400   6.043818  11.683967
+Se      3.489400   8.058426  10.000000
+
+PROJECTORS
+  3 5 3 3  5 3 3 5 3 3 5 3 3 5 3 3 5 3 3 5 3 3 5 3 3 5 3
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+
+SURFACE
+  1 0 0
+  0 1 0
+
+  KPATH_BULK            ! k point path
+  3              ! number of k line only for bulk band
+  M 0.0000000000    1.5     0.0000000000  G 0.0000000000     0.0000000000     0.0000000000
+  G 0.0000000000    0.0000000000     0.0000000000  K 1     1     0.0000000000
+  K 1    1     0.0000000000  M 0.0000000000     1.5     0.0000000000

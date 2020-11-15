@@ -1,0 +1,36 @@
+&CONTROL
+    calculation = "scf"
+    restart_mode='from_scratch'
+    prefix='Sn'
+    outdir='./outdir'
+    pseudo_dir = './'
+/
+&SYSTEM
+    degauss                   =  1.00000e-02
+    ecutrho                   =  300
+    ecutwfc                   =  30
+    ibrav = 0
+    nat = 2
+    ntyp = 1
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    lspinorb = .true.
+    noncolin = .true.
+/
+&ELECTRONS
+    conv_thr         =  1.00000e-10
+    mixing_beta      =  4.00000e-01
+/
+ATOMIC_SPECIES
+Sn   118.71  Sn.rel-pbe-dn-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS angstrom
+Sn       1.6615669992     1.6615669992     4.9847009975
+Sn       3.3231339983     0.0000000000     0.0000000000
+
+CELL_PARAMETERS angstrom
+    0.0000000000     3.3231339983     3.3231339983
+    3.3231339983     0.0000000000     3.3231339983
+    3.3231339983     3.3231339983     0.0000000000
+
+K_POINTS {automatic}
+ 24  24  24  0 0 0
