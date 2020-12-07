@@ -8,15 +8,22 @@ In the project Quantum Espresso, Wannier90 and Pytorch are used for the calculat
 
 ## Investigated materials:
 
-###### NbSe2
-###### Graphene
-###### Li
-###### Alpha Tin
+NbSe2
+
+Graphene
+
+Li
+
+Alpha Tin
 
 ## Languages and Tools:
 
-###### Python
-###### Quantum Espresso
-###### Wannier90
-###### Wanniertools
+Python
+
+Quantum Espresso
+
+Wannier90
+
+Wanniertools
+
 
