@@ -1,0 +1,41 @@
+&CONTROL
+    calculation = "bands"
+    pseudo_dir   = "../Pseudos/"
+    outdir="./outdir"
+    prefix="nbse2"
+/
+
+&SYSTEM
+    a                         =  3.48940e+00
+    c                         =  2.33679e+01
+    degauss                   =  1.00000e-02
+    ecutwfc                   =  5.52247e+01
+    ibrav                     = 4
+    lspinorb                  = .TRUE.
+    nat                       = 3
+    nbnd                      = 42
+    noncolin                  = .TRUE.
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+
+/
+K_POINTS crystal_b
+4
+0.000000000 0.500000000 0.000000000 20 ! M
+0.0000000000 0.000000000 0.000000000 20 ! G
+-0.333333333 0.666666667 0.000000000 20 ! K
+0.000000000 0.500000000 0.000000000 1 ! M
+
+ATOMIC_SPECIES
+Se     78.96000  Se.rel-pbe-n-kjpaw_psl.0.2.UPF
+Nb     92.90638  Nb.rel-pbe-spn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Se     -0.000000   2.014608  13.367933
+Nb      0.000000   0.000000  11.683967  0 0 0
+Se     -0.000000   2.014608  10.000000  0 0 0
