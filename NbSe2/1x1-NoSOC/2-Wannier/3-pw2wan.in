@@ -1,0 +1,9 @@
+&inputpp 
+   outdir = './outdir'
+   prefix = 'NbSe2'
+   seedname = 'NbSe2'
+   write_mmn = .true.
+   write_amn = .true.
+   write_unk = .false.
+   write_dmn = .false.
+/

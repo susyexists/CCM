@@ -1,0 +1,40 @@
+ &control
+    calculation='scf',
+    prefix='NbSe2',
+    outdir      =  "./outdir",
+    pseudo_dir  = "../PP/",
+    tprnfor = .true.,
+    tstress = .true.,
+    etot_conv_thr = 1.0d-5
+    forc_conv_thr = 1.0d-4
+ /
+ &system
+    a                         =  3.45574e+00
+    c                         =  2.33679e+01
+    degauss                   =  0.02
+    ecutrho                   =  4.96823e+02
+    ecutwfc                   =  5.52025e+01
+    ibrav                     = 4
+    nat                       = 3
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "fermi-dirac"
+ /
+
+&ELECTRONS
+    conv_thr         =  1.00000e-10
+    mixing_beta      =  4.00000e-01
+/
+
+ATOMIC_SPECIES
+Nb     92.90638  Nb.pbe-spn-kjpaw_psl.1.0.0.UPF
+Se     78.96000  Se.pbe-dn-kjpaw_psl.1.0.0.UPF
+
+
+ATOMIC_POSITIONS {crystal}
+Nb      0.000000   0.000000   0.500000
+Se      0.333333   0.666666   0.572648
+Se      0.333333   0.666666   0.427353
+
+K_POINTS AUTOMATIC
+8 8 1 0 0 0

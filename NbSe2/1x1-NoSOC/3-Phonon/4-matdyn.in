@@ -1,0 +1,14 @@
+&input
+  asr = 'simple'
+  amass(1) = 92.90638,
+  amass(2) = 78.96000,
+  flfrc = 'NbSe2.k331.fc'
+  flfrq = 'NbSe2.freq'
+  q_in_band_form = .true.
+  q_in_cryst_coord = .true.
+/
+4
+  0.0000 0.0000 0.0000 30 !Gamma
+  0.0000 0.5000 0.0000 30 !M
+  0.3333 0.3333 0.0000 30 !K
+  0.0000 0.0000 0.0000 1 !Gamma

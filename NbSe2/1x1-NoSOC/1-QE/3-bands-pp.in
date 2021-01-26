@@ -1,0 +1,6 @@
+&bands
+outdir = './outdir'
+prefix = 'NbSe2'
+filband = 'NbSe2.bands.dat'
+!plot_2d=.true
+/

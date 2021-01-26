@@ -1,0 +1,13 @@
+--
+&inputph
+  prefix   = 'NbSe2',
+  fildyn   = 'NbSe2.dyn',
+  amass(1) = 92.90638,
+  amass(2) = 78.96000,
+  outdir   = './outdir'
+  ldisp    = .true.,
+  nq1=3,
+  nq2=3,
+  nq3=1,
+  tr2_ph   =  1.0d-10
+ /
