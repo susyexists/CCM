@@ -6,9 +6,8 @@
     pseudo_dir = './'
 /
 &SYSTEM
-    degauss                   =  1.00000e-02
-    ecutrho                   =  300
-    ecutwfc                   =  30
+    degauss                   =  0.03
+    ecutwfc                   =  100
     ibrav = 0
     nat = 2
     ntyp = 1
@@ -18,8 +17,7 @@
     noncolin = .true.
 /
 &ELECTRONS
-    conv_thr         =  1.00000e-10
-    mixing_beta      =  4.00000e-01
+    conv_thr         =  1.00000e-8
 /
 ATOMIC_SPECIES
 Sn   118.71  Sn.rel-pbe-dn-kjpaw_psl.1.0.0.UPF
