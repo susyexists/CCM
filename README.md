@@ -16,9 +16,7 @@ Li
 
 Alpha Tin
 
-## Languages and Tools:
-
-Python
+## Tools:
 
 Pytorch
 
