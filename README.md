@@ -20,6 +20,8 @@ Alpha Tin
 
 Python
 
+Pytorch
+
 Quantum Espresso
 
 Wannier90
